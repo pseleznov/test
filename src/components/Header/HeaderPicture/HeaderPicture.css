@@ -1,0 +1,11 @@
+.userPicture {
+  width: 123px;
+  height: 90px;
+  font-size: 0;
+  margin-top: 5px;
+}
+
+.userPicture img {
+  width: 100%;
+}
+/*# sourceMappingURL=HeaderPicture.css.map */

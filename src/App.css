@@ -1,3 +1,24 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #3E3E3E;
 }
+
+* h1 {
+  font-size: 40px;
+  font-weight: 600px;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.wrapper .content-wrapper {
+  height: 80vh;
+}
+/*# sourceMappingURL=App.css.map */

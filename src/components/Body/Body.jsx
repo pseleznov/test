@@ -4,7 +4,7 @@ import  './Body.css'
 const Body = () => {
     return (
         <div className="bodyWrapper">
-            go go go
+            BODY
         </div>
     );
 }

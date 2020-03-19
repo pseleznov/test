@@ -3,14 +3,17 @@ import './App.css';
 import Body from './components/Body/Body';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import { Route, BrowserRouter } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className="wrapper">
+      <div className="wrapper">
         <Header />
-        <Body />
+        <div className="content-wrapper">
+          <Route path='/homepage' render={() => <Body />} />
+        </div>
         <Footer />
-    </div>
+      </div>
   );
 }
 

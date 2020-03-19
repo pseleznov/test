@@ -1,0 +1,3 @@
+@mixin widthCustomizer($param) {
+    width: $param / 1360px * 100%;
+}
