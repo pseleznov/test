@@ -1,0 +1,79 @@
+.headerFeatures {
+  font-size: 0.88889em;
+  position: absolute;
+  top: 64px;
+  right: 6.61765%;
+  height: 79px;
+  width: 28.08824%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.headerFeatures .form-hidden {
+  height: 100%;
+  width: 314px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow: hidden;
+}
+
+.headerFeatures .form-hidden label {
+  margin-right: 13px;
+  font-size: 0;
+  height: 18px;
+}
+
+.headerFeatures .form-hidden label img {
+  height: 100%;
+}
+
+.headerFeatures .form-hidden input {
+  width: 230px;
+  line-height: 21px;
+  height: 21px;
+  margin-left: 31px;
+  border: none;
+  outline: none;
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
+}
+
+.headerFeatures .form-hidden input:focus, .headerFeatures .form-hidden input:valid {
+  -webkit-transform: translate(0%, 46px);
+          transform: translate(0%, 46px);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.headerFeatures .form-hidden input:valid + label,
+.headerFeatures .form-hidden input:focus + label {
+  -webkit-transform: translateY(46px);
+          transform: translateY(46px);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.headerFeatures .languageBar {
+  width: 58px;
+  height: 21px;
+  border: 1px solid black;
+}
+/*# sourceMappingURL=HeaderFeatures.css.map */

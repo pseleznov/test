@@ -1,8 +1,10 @@
 .userPicture {
+  position: absolute;
   width: 123px;
   height: 90px;
   font-size: 0;
-  margin-top: 5px;
+  top: 5px;
+  left: 6.61765%;
 }
 
 .userPicture img {

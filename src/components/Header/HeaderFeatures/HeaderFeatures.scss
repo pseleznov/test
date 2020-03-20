@@ -1,0 +1,54 @@
+@import '../../../assets/styles/widthCust';
+
+.headerFeatures {
+    font-size: 16px / 18px * 1em;
+    position: absolute;
+    top: 64px;
+    right: 90/1360 *100%;
+    height: 79px;
+    @include widthCustomizer(382px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .form-hidden {
+        height: 100%;
+        width: 314px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow: hidden;
+        label {
+            margin-right: 13px;
+            font-size: 0;
+            height: 18px;
+            img {
+                height: 100%;
+            }
+        }
+        input {
+            width: 230px;
+            line-height: 21px;
+            height: 21px;
+            margin-left: 31px;
+            border: none;
+            outline: none;
+            transform: translateX(150%);
+            &:focus,
+            &:valid {
+                transform: translate(0%, 46px);
+                transition: transform 0.5s ease;
+            }
+            &:valid + label,
+            &:focus + label {
+                transform: translateY(46px);
+                transition: transform 0.5s ease;
+            }
+        }
+    }
+    .languageBar {
+        width: 58px;
+        height: 21px;
+        border: 1px solid black;
+
+    }
+}
