@@ -1,7 +1,127 @@
 .headerWrapper {
-  position: relative;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 106px;
-  border: 1px solid black;
+}
+
+@media screen and (max-width: 1025px) {
+  .headerWrapper {
+    height: 60px;
+  }
+  .headerWrapper .userPicture {
+    height: 56px;
+    top: 2px;
+    left: 16px;
+  }
+  .headerWrapper .burgerMenu .burgerLabel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+  }
+  .headerWrapper .burgerMenu .headerMenu {
+    display: block;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    padding: 0px 16px;
+    height: calc(100vh - 60px);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(17.19%, #49494A), to(#383836));
+    background: linear-gradient(180deg, #49494A 17.19%, #383836 100%);
+  }
+  .headerWrapper .burgerMenu .headerMenu .headerMenuLine {
+    height: 1px;
+    width: 100%;
+  }
+  .headerWrapper .burgerMenu .headerMenu .headerMenuItem {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 0;
+  }
+  .headerWrapper .burgerMenu .headerMenu .headerMenuItem .headerMenuItemServ {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .headerWrapper .burgerMenu .headerMenu .headerMenuItem .headerMenuItemServ .vectorImg {
+    margin: 0;
+  }
+  .headerWrapper .burgerMenu .headerMenu .headerMenuItem a {
+    color: #fff;
+  }
+  .headerWrapper .burgerMenu .headerMenu .headerMenuItem a.active {
+    color: #AEAEAE;
+  }
+  .headerWrapper .burgerMenu .headerMenu .headerMenuItem .headerMenuItem_underline {
+    display: none;
+  }
+  .headerWrapper .headerFeatures {
+    top: 15px;
+    right: 72px;
+    min-width: 183px;
+    height: 30px;
+  }
+  .headerWrapper .headerFeatures .form-hidden {
+    height: 30px;
+    width: 183px;
+    overflow: hidden;
+  }
+  .headerWrapper .headerFeatures .form-hidden label {
+    padding: 6px 12px;
+    margin: 0;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .headerWrapper .headerFeatures .form-hidden input {
+    padding: 5px 0px 5px 12px;
+    width: 140px;
+    height: 30px;
+  }
+  .headerWrapper .headerFeatures .form-hidden input:focus, .headerWrapper .headerFeatures .form-hidden input:valid {
+    background-color: #fff;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    -webkit-transition: all 0s ease;
+    transition: all 0s ease;
+  }
+  .headerWrapper .headerFeatures .form-hidden input:focus + label,
+  .headerWrapper .headerFeatures .form-hidden input:valid + label {
+    background-color: #fff;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    -webkit-transition: all 0s ease;
+    transition: all 0s ease;
+  }
+  .headerWrapper .headerFeatures .languageBar {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

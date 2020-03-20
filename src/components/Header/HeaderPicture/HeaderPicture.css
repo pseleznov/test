@@ -1,6 +1,5 @@
 .userPicture {
   position: absolute;
-  width: 123px;
   height: 90px;
   font-size: 0;
   top: 5px;
@@ -8,6 +7,6 @@
 }
 
 .userPicture img {
-  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=HeaderPicture.css.map */

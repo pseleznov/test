@@ -1,6 +1,105 @@
+$SBorder: 1px solid black;
+
 .headerWrapper {
-    position: relative;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 106px;
-    border: 1px solid black;
+    @media screen and (max-width: 1025px) {
+        height: 60px;
+        .userPicture {
+            height: 56px;
+            top: 2px;
+            left: 16px;
+        }
+        .burgerMenu{
+            .burgerLabel {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+            .headerMenu {
+                display:block;
+                top: 60px;
+                left: 0px;
+                width: 100%;
+                padding: 0px 16px;
+                height: calc(100vh - 60px);
+                background: linear-gradient(180deg, #49494A 17.19%, #383836 100%);
+                .headerMenuLine {
+                    height: 1px;
+                    width: 100%;
+                }
+                .headerMenuItem {
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 15px 0;
+                    .headerMenuItemServ {
+                        width: 100%;
+                        align-items: center;
+                        .vectorImg {
+                            margin: 0;
+                        }
+                    }
+                    a {
+                        color: #fff;
+                    }
+                    a.active {
+                        color: #AEAEAE;
+                    }
+                    .headerMenuItem_underline {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .headerFeatures{
+            top: 15px;
+            right: 72px;
+            min-width: 183px;
+            height: 30px;
+            .form-hidden{
+                height: 30px;
+                width: 183px;
+                overflow: hidden;
+                label{
+                    padding: 6px 12px;
+                    margin: 0;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                input {
+                    padding: 5px 0px 5px 12px;
+                    width: 140px;
+                    height: 30px;
+                    &:focus,
+                    &:valid {
+                        background-color: #fff;
+                        border-top: $SBorder;
+                        border-left: $SBorder;
+                        border-bottom: $SBorder;
+                        transform: translate(0%, 0%);
+                        transition: all 0s ease;
+                    }
+                    &:focus + label,
+                    &:valid + label{
+                        background-color: #fff;
+                        border-top: $SBorder;
+                        border-right: $SBorder;
+                        border-bottom: $SBorder;
+                        transform: translate(0%, 0%);
+                        transition: all 0s ease;
+                    }
+                }
+            }
+            .languageBar{
+                display:none;
+            }
+        }
+    }
 }

@@ -1,11 +1,10 @@
 .userPicture {
     position: absolute;
-    width: 123px;
     height: 90px;
     font-size: 0;
     top: 5px;
     left: 90/1360 *100%;
     img {
-        width: 100%;
+        height: 100%;
     }
 }
