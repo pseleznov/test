@@ -28,13 +28,46 @@
             justify-content: center;
     cursor: pointer;
   }
+  .headerWrapper .burgerMenu .checkbox:checked + .burgerLabel span::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0px;
+    -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: transform 0.2s ease-in 0.2s, top 0.2s linear;
+    transition: transform 0.2s ease-in 0.2s, top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  }
+  .headerWrapper .burgerMenu .checkbox:checked + .burgerLabel span::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0px;
+    -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+    transition: transform 0.2s ease-in 0.2s, top 0.2s linear;
+    transition: transform 0.2s ease-in 0.2s, top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  }
+  .headerWrapper .burgerMenu .checkbox:checked + .burgerLabel div {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .headerWrapper .burgerMenu .checkbox ~ .headerMenu {
+    height: 0;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  .headerWrapper .burgerMenu .checkbox:checked ~ .headerMenu {
+    height: calc(100vh - 60px);
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
   .headerWrapper .burgerMenu .headerMenu {
     display: block;
     top: 60px;
     left: 0px;
     width: 100%;
     padding: 0px 16px;
-    height: calc(100vh - 60px);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(17.19%, #49494A), to(#383836));
     background: linear-gradient(180deg, #49494A 17.19%, #383836 100%);
   }

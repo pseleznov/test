@@ -21,13 +21,34 @@ $SBorder: 1px solid black;
                 justify-content: center;
                 cursor: pointer;
             }
+            .checkbox:checked + .burgerLabel span::before {
+                transform: rotate(45deg);
+                top: 0px;
+                transition: transform 0.2s ease-in 0.2s, top 0.2s linear;
+            }
+            .checkbox:checked + .burgerLabel span::after {
+                transform: rotate(-45deg);
+                top: 0px;
+                transition: transform 0.2s ease-in 0.2s, top 0.2s linear;
+            }
+            .checkbox:checked + .burgerLabel div{
+                transform: scale(0);
+                transition: all 0.2s linear;
+            }
+            .checkbox ~ .headerMenu {
+                height: 0;
+                transition: all 0.3s ease-in;
+            }
+            .checkbox:checked ~ .headerMenu {
+                height: calc(100vh - 60px);
+                transition: all 0.3s ease-in;
+            }
             .headerMenu {
                 display:block;
                 top: 60px;
                 left: 0px;
                 width: 100%;
                 padding: 0px 16px;
-                height: calc(100vh - 60px);
                 background: linear-gradient(180deg, #49494A 17.19%, #383836 100%);
                 .headerMenuLine {
                     height: 1px;

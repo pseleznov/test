@@ -11,9 +11,6 @@ const HeaderFeatures = () => {
                     <img src={search} alt="" />
                 </label>
             </div>
-            <div className="languageBar">
-                UA
-            </div>
         </div>
     );
 }

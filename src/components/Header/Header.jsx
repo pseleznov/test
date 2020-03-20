@@ -3,6 +3,7 @@ import  './Header.css'
 import HeaderPicture from './HeaderPicture/HeaderPicture';
 import HeaderMenu from './HeaderMenu/HeaderMenu';
 import HeaderFeatures from './HeaderFeatures/HeaderFeatures';
+import HeaderLanguage from './HeaderLanguage/HeaderLanguage';
 
 const Header = () => {
     return (
@@ -10,6 +11,7 @@ const Header = () => {
             <HeaderPicture />
             <HeaderMenu />
             <HeaderFeatures />
+            <HeaderLanguage />
         </div>
     );
 }
