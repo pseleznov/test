@@ -4,8 +4,8 @@ import headerReducer from './headerReducer'
 
 
 let reducers = combineReducers({
-    pageHeader: headerReducer,
-    pageBody: bodyReducer
+    partHeader: headerReducer,
+    partBody: bodyReducer
 });
 
 let store = createStore(reducers);

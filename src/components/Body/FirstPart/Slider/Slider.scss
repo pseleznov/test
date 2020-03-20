@@ -1,0 +1,25 @@
+.slider{
+    position: relative;
+    height: 100%;
+    .sliderPicture {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        font-size: 0;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .sliderRoute {
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

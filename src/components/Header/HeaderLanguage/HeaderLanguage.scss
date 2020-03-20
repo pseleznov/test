@@ -2,7 +2,7 @@
     .languageBar {
         position: absolute;
         top: 64px;
-        right: 90px;
+        right: 90px / 1360px *100%;
         width: 58px;
         height: 21px;
         display: flex;
