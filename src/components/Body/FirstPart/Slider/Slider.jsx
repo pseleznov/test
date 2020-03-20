@@ -4,9 +4,11 @@ import { Carousel } from 'react-responsive-carousel';
 import './Slider.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './Slider.css'
+import BigBanner from '../../../Banners/BigBanner/BigBanner';
 
 const Slider = (props) => {
-        return (
+    return (
+        <div>
             <Carousel emulateTouch>
                 <div>
                     <img src={props.image[0]} />
@@ -18,7 +20,9 @@ const Slider = (props) => {
                     <img src={props.image[0]} />
                 </div>
             </Carousel>
-        );
+            <BigBanner />
+        </div>
+    );
 };
 
 export default Slider;

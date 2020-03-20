@@ -5,7 +5,10 @@ let initialState = {
         images: [
             firstPicture
         ],
-        currentImgIndex: 1
+        bigBannerText: {
+            firstline: 'bla',
+            secondline: 'blabla'
+        }
     }
 }
 
