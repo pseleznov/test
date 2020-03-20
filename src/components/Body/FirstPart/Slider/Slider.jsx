@@ -1,29 +1,24 @@
-import React from 'react'
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom';
+import { Carousel } from 'react-responsive-carousel';
+import './Slider.css'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './Slider.css'
 
 const Slider = (props) => {
-  
-    return (
-        <div className='slider'>
-            <div className='sliderPicture'>
-                <img src={props.image} alt=""/>
-            </div>
-            <div className='sliderRoute'>
-            <div>
-                <button onClick={props.setPicture()}>{props.id}</button>
-            </div>
-            <div>
-                <button>O</button>
-            </div>            
-            <div>
-                <button>O</button>
-            </div>            
-            <div>
-                <button>O</button>
-            </div>
-            </div>
-        </div>
-    )
-}
+        return (
+            <Carousel emulateTouch>
+                <div>
+                    <img src={props.image[0]} />
+                </div>
+                <div>
+                    <img src={props.image[0]} />
+                </div>
+                <div>
+                    <img src={props.image[0]} />
+                </div>
+            </Carousel>
+        );
+};
 
 export default Slider;
