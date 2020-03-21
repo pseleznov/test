@@ -1,4 +1,4 @@
-import firstPicture from '../assets/images/Rectangle.svg'
+import firstPicture from '../assets/images/Rectangle.png'
 
 let initialState = {
     firstPart: {
@@ -6,8 +6,8 @@ let initialState = {
             firstPicture
         ],
         bigBannerText: {
-            firstline: 'bla',
-            secondline: 'blabla'
+            firstline: 'Высокоточное изготовление',
+            secondline: 'изделий из метала по чертежам'
         }
     }
 }

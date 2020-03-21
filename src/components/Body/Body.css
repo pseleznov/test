@@ -3,4 +3,10 @@
   z-index: 2;
   padding-top: 107px;
 }
+
+@media screen and (max-width: 1024px) {
+  .bodyWrapper {
+    padding-top: 60px;
+  }
+}
 /*# sourceMappingURL=Body.css.map */

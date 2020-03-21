@@ -1,34 +1,38 @@
 .slider {
   position: relative;
-  height: 100%;
 }
 
-.slider .sliderPicture {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+.slider .slide.selected > div {
   width: 100%;
-  font-size: 0;
-}
-
-.slider .sliderPicture img {
   height: 100%;
-  width: 100%;
 }
 
-.slider .sliderRoute {
-  width: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+.slider .slide.selected > div img {
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .slider .slide.selected > div {
+    width: 400px;
+    height: 216px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .slider .slide.selected > div {
+    width: 360px;
+    height: 216px;
+  }
+}
+
+.slider .carousel .control-dots .dot {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.slider .carousel .control-dots .dot.selected {
+  background-color: #E4B56B;
 }
 /*# sourceMappingURL=Slider.css.map */

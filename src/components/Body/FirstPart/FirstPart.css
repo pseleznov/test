@@ -1,11 +1,10 @@
 .FirstPart {
   position: relative;
   width: 100%;
-  height: 448px;
-  border: 1px solid black;
 }
 
 .FirstPart .carousel.carousel-slider + .carousel,
+.FirstPart .carousel.carousel-slider .control-arrow,
 .FirstPart .carousel.carousel-slider .control-arrow.control-next,
 .FirstPart .carousel.carousel-slider > p {
   display: none;

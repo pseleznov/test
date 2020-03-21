@@ -1,9 +1,100 @@
-.BigBanner {
+.bigBanner {
   position: absolute;
   left: 0;
-  top: 30px;
-  background: green;
-  width: 30px;
-  height: 30px;
+  top: 94px;
+  background: #3e3e3ee6;
+  width: 751px;
+  height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bigBanner .bigBannerLine {
+  width: 84.68708%;
+  height: 2px;
+  background: #e4b56bcc;
+}
+
+.bigBanner .bigBannerFirstLine,
+.bigBanner .bigBannerSecondLine {
+  color: #fff;
+  line-height: 1.5em;
+  font-size: 2.22em;
+  width: 84.0213%;
+  height: calc(25% - 2px);
+  margin-left: 11.98402%;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1300px) {
+  .bigBanner {
+    height: 210px;
+    width: 580px;
+  }
+  .bigBanner .bigBannerFirstLine,
+  .bigBanner .bigBannerSecondLine {
+    font-size: 1.7em;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bigBanner {
+    top: 60px;
+    height: 160px;
+    width: 450px;
+  }
+  .bigBanner .bigBannerFirstLine,
+  .bigBanner .bigBannerSecondLine {
+    font-size: 1.3em;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bigBanner {
+    top: 40px;
+    width: 300px;
+    height: 120px;
+  }
+  .bigBanner .bigBannerFirstLine,
+  .bigBanner .bigBannerSecondLine {
+    line-height: 1.7em;
+    font-size: 0.8em;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bigBanner {
+    top: 53px;
+    width: 252px;
+    height: 110px;
+    line-height: 25px;
+  }
+  .bigBanner .bigBannerFirstLine,
+  .bigBanner .bigBannerSecondLine {
+    line-height: 1.7em;
+    font-size: 0.77em;
+    letter-spacing: 0.4px;
+    margin-left: 16px;
+    height: 23px;
+    width: 221px;
+  }
+  .bigBanner .bigBannerLine {
+    width: 208px;
+    height: 1px;
+  }
 }
 /*# sourceMappingURL=BigBanner.css.map */

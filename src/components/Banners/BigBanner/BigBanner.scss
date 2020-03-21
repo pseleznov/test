@@ -1,8 +1,76 @@
-.BigBanner {
+.bigBanner {
     position: absolute;
     left: 0;
-    top: 30px;
-    background: green;
-    width: 30px;
-    height: 30px;
+    top: 94px;
+    background: #3e3e3ee6;
+    width: 751px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    .bigBannerLine {
+        width: 636 /751 *100%;
+        height: 2px;
+        background: #e4b56bcc;
+    }
+    .bigBannerFirstLine,
+    .bigBannerSecondLine {
+        color: #fff;
+        line-height: 1.5em;
+        font-size: 2.22em;
+        width: 631 /751 *100%;
+        height: calc(25% - 2px);
+        margin-left: 90 /751 *100%;
+        letter-spacing: 1px;
+    }
+    @media screen and (max-width: 1300px) {
+        height: 210px;
+        width: 580px;
+        .bigBannerFirstLine,
+        .bigBannerSecondLine {
+            font-size: 1.7em;
+            margin-left: 40px;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        top: 60px;
+        height: 160px;
+        width: 450px;
+        .bigBannerFirstLine,
+        .bigBannerSecondLine {
+            font-size: 1.3em;
+            margin-left: 30px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        top: 40px;
+        width: 300px;
+        height: 120px;
+        .bigBannerFirstLine,
+        .bigBannerSecondLine {
+            line-height: 1.7em;
+            font-size: 0.8em;
+            margin-left: 20px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        top: 53px;
+        width: 252px;
+        height: 110px;
+        line-height: 25px;
+        .bigBannerFirstLine,
+        .bigBannerSecondLine {
+            line-height: 1.7em;
+            font-size: 0.77em;
+            letter-spacing: 0.4px;
+            margin-left: 16px;
+            height: 23px;
+            width: 221px;
+        }
+        .bigBannerLine {
+            width: 208px;
+            height: 1px;
+        }
+    }
 }

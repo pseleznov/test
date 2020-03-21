@@ -1,25 +1,27 @@
 .slider{
     position: relative;
-    height: 100%;
-    .sliderPicture {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
+    .slide.selected > div {
         width: 100%;
-        font-size: 0;
+        height: 100%;
         img {
             height: 100%;
-            width: 100%;
+        }
+        @media screen and (max-width: 600px) {
+            width: 400px;
+            height: 216px;
+        }
+        @media screen and (max-width: 414px) {
+            width: 360px;
+            height: 216px;
         }
     }
-    .sliderRoute {
-        width: 100px;
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        bottom: 15px;
-        left: 50%;
-        transform: translateX(-50%);
+    .carousel .control-dots .dot {
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        opacity: 1;
+    }
+    .carousel .control-dots .dot.selected {
+        background-color: #E4B56B;
     }
 }
