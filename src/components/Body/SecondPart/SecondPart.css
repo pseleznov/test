@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 600px) {
   .secondPartWrapper {
-    height: 513px;
+    height: 549px;
   }
 }
 
@@ -44,5 +44,34 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.secondPartWrapper .button {
+  width: 379px;
+  height: 43px;
+  padding: 10px 30px;
+  color: #fff;
+  background: #454647;
+  font-size: 1.1em;
+  line-height: 22px;
+}
+
+.secondPartWrapper .button .forPhone {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .secondPartWrapper .button {
+    font-size: 0.78em;
+    line-height: 16px;
+    width: 91.66%;
+    height: 36px;
+  }
+  .secondPartWrapper .button .forComp {
+    display: none;
+  }
+  .secondPartWrapper .button .forPhone {
+    display: block;
+  }
 }
 /*# sourceMappingURL=SecondPart.css.map */

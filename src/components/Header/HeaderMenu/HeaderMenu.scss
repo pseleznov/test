@@ -66,6 +66,9 @@
             display: flex;
             align-items: flex-end;
             z-index: 1;
+            .forPhone {
+                display: none;
+            }
             .headerMenuItem_underline {
                 width: 100%;
                 height: 2px;
@@ -76,6 +79,9 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-end;
+                .vectorForPhone {
+                    display: none;
+                }
                 .vectorImg {
                     height: 8px;
                     width: 14px;

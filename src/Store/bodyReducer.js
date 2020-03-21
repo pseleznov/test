@@ -63,7 +63,10 @@ let initialState = {
                 img: eighth
             }
         },
-        fastCalculationText : 'Быстрый расчет цены по чертежу'
+        buttonText: [
+            'Быстрый расчет цены по чертежу',
+            'Расчет стоимости'
+        ]
     }
 }
 

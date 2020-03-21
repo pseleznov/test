@@ -11,7 +11,10 @@ const SecondPart = (props) => {
             <div className='secondPartMainContent'>
                 <BodyHeader header={props.headers} />
                 <Grid smallBanner={props.smallBanner} />
-                <button className='calc'>hjhjghjg</button>
+                <button className='button'>
+                    <div className="forComp">{props.buttonText[0]}</div>  
+                    <div className="forPhone">{props.buttonText[1]}</div>
+                </button>
             </div>
         </div>
     );

@@ -9,7 +9,7 @@
         height: 793px;
     }
     @media screen and (max-width: 600px) {
-        height: 513px;
+        height: 549px;
     }
     .secondPartMainContent {
         width: 100%;
@@ -24,5 +24,30 @@
         align-items: center;
         flex-direction: column;
     }
+    .button {
+        width: 379px;
+        height: 43px;
+        padding: 10px 30px;
+        color: #fff;
+        background: #454647;
+        font-size: 1.1em;
+        line-height: 22px;
+        .forPhone {
+            display: none;
+        }
+        @media screen and (max-width: 600px) {
+            .forComp {
+                display: none;
+            }
+            .forPhone {
+                display: block;
+            }
+            font-size: 0.78em;
+            line-height: 16px;
+            width: 91.66%;
+            height: 36px;
+        }
+    }
+
 
 }

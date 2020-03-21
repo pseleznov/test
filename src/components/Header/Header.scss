@@ -59,11 +59,20 @@ $SBorder: 1px solid #3e3e3e38;
                     justify-content: flex-start;
                     align-items: center;
                     padding: 15px 0;
+                    .forPhone {
+                        display: block;
+                    }
+                    .forComp {
+                        display: none;
+                    }
                     .headerMenuItemServ {
                         width: 100%;
                         align-items: center;
+                        .vectorForPhone {
+                            display: block;
+                        }
                         .vectorImg {
-                            margin: 0;
+                            display: none;
                         }
                     }
                     a {

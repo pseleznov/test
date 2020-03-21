@@ -2,6 +2,7 @@ import React from 'react'
 import './HeaderMenu.css'
 import { NavLink } from 'react-router-dom'
 import vector from '../../../assets/images/Vector.svg'
+import vectorForPhone from '../../../assets/images/VectorForPhone.svg'
 
 const state = [
     'Главная',
@@ -24,9 +25,12 @@ const HeaderMenu = () => {
             </label>   
             <div className="headerMenu">
                 <div className="headerMenuItem">
-                    <div>
+                    <div className="forComp">
                         <NavLink to='/homepage' activeClassName='active'>Главная</NavLink>
                         <div className='headerMenuItem_underline'></div>
+                    </div>
+                    <div className="forPhone">
+                        <NavLink to='/homepage' activeClassName='active'>Меню</NavLink>
                     </div>
                 </div>
                 <div className="headerMenuLine"></div>
@@ -38,6 +42,9 @@ const HeaderMenu = () => {
                         </div>
                         <div className='vectorImg'>
                             <img src={vector} alt="" />
+                        </div>
+                        <div className='vectorForPhone'>
+                            <img src={vectorForPhone} alt="" />
                         </div>
                     </div>
                 </div>
