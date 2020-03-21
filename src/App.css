@@ -14,7 +14,8 @@
 }
 
 .wrapper {
-  width: 100%;
+  max-width: 1360px;
+  margin: auto;
 }
 
 .wrapper .content-wrapper {
