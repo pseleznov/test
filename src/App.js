@@ -1,16 +1,16 @@
 import React from 'react';
 import './App.css';
-import Body from './components/Body/Body';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import { Route } from 'react-router-dom';
+import BodyContainer from './components/Body/BodyContainer';
 
 const App = () => {
   return (
       <div className="wrapper">
         <Header />
         <div className="content-wrapper">
-          <Route path='/homepage' render={() => <Body />} />
+          <Route path='/homepage' render={() => <BodyContainer />} />
         </div>
         <Footer />
       </div>

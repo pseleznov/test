@@ -25,13 +25,11 @@ let initialState = {
             seventh: 'Аренда техники',
             eighth: 'Ремонт техники'
         },
-        fastCalculationText : ''
+        fastCalculationText : 'Быстрый расчет цены по чертежу'
     }
-
 }
 
 const bodyReducer = (state = initialState, action) => {
-
     return state;
 }
 

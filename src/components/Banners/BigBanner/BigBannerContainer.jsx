@@ -3,8 +3,8 @@ import BigBanner from "./BigBanner"
 
 const mapStateToProps = (state) => {
     return {
-        firstline: state.partBody.firstPart.bigBannerText.firstline,
-        secondline: state.partBody.firstPart.bigBannerText.secondline
+        firstline: state.bodyPart.firstPart.bigBannerText.firstline,
+        secondline: state.bodyPart.firstPart.bigBannerText.secondline
     }
 }
 

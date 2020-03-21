@@ -3,7 +3,7 @@ import Slider from './Slider'
 
 const mapStateToProps = (state) => {
     return {
-        image: state.partBody.firstPart.images,
+        image: state.bodyPart.firstPart.images,
     }
 }
 

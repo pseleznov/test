@@ -3,8 +3,9 @@ import Body from "./Body";
 
 const mapStateToProps = (state) => {
     return {
-        firstline: state.partBody.firstPart.bigBannerText.firstline,
-        secondline: state.partBody.firstPart.bigBannerText.secondline
+        headers: state.bodyPart.secondPart.headers,
+        text: state.bodyPart.secondPart.smallBannerText,
+        calculation: state.bodyPart.secondPart.fastCalculationText
     }
 }
 

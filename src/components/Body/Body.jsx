@@ -4,10 +4,11 @@ import FirstPart from './FirstPart/FirstPart'
 import BodyHeader from './BodyHeader/BodyHeader'
 
 const Body = (props) => {
+
     return (
         <div className="bodyWrapper">
             <FirstPart />
-            <BodyHeader header='Услуга'/>
+            <BodyHeader header={props.headers[0]}/>
         </div>
     );
 }
