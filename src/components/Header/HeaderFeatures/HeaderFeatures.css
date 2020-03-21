@@ -1,7 +1,6 @@
 .headerFeatures {
   font-size: 0.88889em;
   position: absolute;
-  z-index: 3;
   top: 64px;
   right: 11.61765%;
   height: 79px;
@@ -10,7 +9,6 @@
 
 .headerFeatures .form-hidden {
   position: absolute;
-  z-index: 2;
   top: 0;
   left: 0;
   height: 100%;
@@ -57,6 +55,7 @@
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   background: #F1F1F1;
+  border: none;
 }
 
 .headerFeatures .form-hidden input:valid + label,
@@ -65,18 +64,10 @@
   -webkit-transform: translate(0%, 41px);
           transform: translate(0%, 41px);
   background: #F1F1F1;
-  -webkit-transition: background 0.1s ease 0.4s, -webkit-transform 0.5s ease;
-  transition: background 0.1s ease 0.4s, -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease, background 0.1s ease 0.4s;
-  transition: transform 0.5s ease, background 0.1s ease 0.4s, -webkit-transform 0.5s ease;
-}
-
-.headerFeatures .languageBar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 58px;
-  height: 21px;
-  border: 1px solid black;
+  border-left: 1px solid #F1F1F1;
+  -webkit-transition: background 0s ease 0.4s, border 0s ease 0.4s, -webkit-transform 0.5s ease;
+  transition: background 0s ease 0.4s, border 0s ease 0.4s, -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease, background 0s ease 0.4s, border 0s ease 0.4s;
+  transition: transform 0.5s ease, background 0s ease 0.4s, border 0s ease 0.4s, -webkit-transform 0.5s ease;
 }
 /*# sourceMappingURL=HeaderFeatures.css.map */

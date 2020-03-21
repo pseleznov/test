@@ -1,11 +1,13 @@
 import React from 'react'
 import './Gears.css'
+import GearsGroupRight from './GearsGroupRight/GearsGroupRight';
+import GearsGroupLeft from './GearsGroupLeft/GearsGroupLeft';
 
 const Gears = () => {
     return (
         <div className="gearsWrapper">
-            <div className="group1"></div>
-            <div className="group2"></div>
+            <GearsGroupLeft />
+            <GearsGroupRight />
         </div>
     );
 }

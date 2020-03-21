@@ -8,9 +8,10 @@
   background-color: #fff;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
   .headerWrapper {
     height: 60px;
+    border-bottom: 1px solid black;
   }
   .headerWrapper .userPicture {
     height: 56px;
@@ -149,6 +150,7 @@
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
+    border-left: none;
     -webkit-transform: translate(0%, 0%);
             transform: translate(0%, 0%);
     -webkit-transition: all 0s ease;

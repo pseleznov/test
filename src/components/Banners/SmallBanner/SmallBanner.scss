@@ -1,0 +1,25 @@
+.smallBanner {
+    width: 333 / 387 *100%;
+    height: 56px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 32px;
+    left: 0px;
+    background: #3e3e3ee6;
+    .smallBannerLine {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        width: 2px;
+        height: 46px;
+        background-color: #E4B56B;
+    }
+    .smallBannerText {
+        padding-left: 15px;
+        font-size: 1.11em;
+        line-height: 60px;
+        color: white;
+    }
+}

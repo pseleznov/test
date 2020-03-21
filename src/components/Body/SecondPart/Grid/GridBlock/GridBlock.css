@@ -1,0 +1,15 @@
+.gridBlock {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gridBlock .gridBlockImg {
+  width: 100%;
+  height: 100%;
+}
+
+.gridBlock .gridBlockImg img {
+  height: 100%;
+}
+/*# sourceMappingURL=GridBlock.css.map */

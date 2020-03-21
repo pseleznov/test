@@ -1,5 +1,30 @@
 .gearsWrapper {
-    position: relative;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    @media screen and (max-width: 1300px) {
+        .gearsGroupLeft,
+        .gearsGroupRight {
+            width: 400px;
+            height: 400px;
+            .smallGear {
+                width: 100px;
+            }
+            .mediumGear {
+                width: 120px;
+            }
+            .bigGear {
+                width: 280px;
+            }
+        }
+        .gearsGroupRight {
+            right: 1%;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
 }

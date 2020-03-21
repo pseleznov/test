@@ -8,7 +8,7 @@ const Body = (props) => {
     return (
         <div className="bodyWrapper">
             <FirstPart />
-            <SecondPart headers={props.headers} />
+            <SecondPart headers={props.headers[0]} />
             
 
         </div>

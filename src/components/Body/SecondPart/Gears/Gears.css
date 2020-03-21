@@ -1,6 +1,40 @@
 .gearsWrapper {
-  position: relative;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .gearsWrapper .gearsGroupLeft,
+  .gearsWrapper .gearsGroupRight {
+    width: 400px;
+    height: 400px;
+  }
+  .gearsWrapper .gearsGroupLeft .smallGear,
+  .gearsWrapper .gearsGroupRight .smallGear {
+    width: 100px;
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+  }
+  .gearsWrapper .gearsGroupLeft .mediumGear,
+  .gearsWrapper .gearsGroupRight .mediumGear {
+    width: 120px;
+  }
+  .gearsWrapper .gearsGroupLeft .bigGear,
+  .gearsWrapper .gearsGroupRight .bigGear {
+    width: 280px;
+  }
+  .gearsWrapper .gearsGroupRight {
+    right: 1%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .gearsWrapper {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Gears.css.map */

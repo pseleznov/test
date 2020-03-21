@@ -1,6 +1,41 @@
-.gearsWrapper {
+.gearsGroupLeft {
   position: absolute;
-  width: 516px;
-  height: 566px;
+  width: 566px;
+  height: 516px;
+  top: 60%;
+  left: 18%;
+  -webkit-transform: translate(-50%, -50%) rotate(-135deg);
+          transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.gearsGroupLeft .smallGear,
+.gearsGroupLeft .mediumGear,
+.gearsGroupLeft .bigGear {
+  position: absolute;
+}
+
+.gearsGroupLeft .smallGear img,
+.gearsGroupLeft .mediumGear img,
+.gearsGroupLeft .bigGear img {
+  width: 100%;
+  height: 100%;
+}
+
+.gearsGroupLeft .smallGear {
+  top: 1%;
+  right: 29%;
+  width: 176px;
+}
+
+.gearsGroupLeft .mediumGear {
+  top: 28%;
+  right: 0%;
+  width: 208px;
+}
+
+.gearsGroupLeft .bigGear {
+  left: 0;
+  bottom: 0;
+  width: 366px;
 }
 /*# sourceMappingURL=GearsGroupLeft.css.map */

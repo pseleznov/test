@@ -1,5 +1,33 @@
-.gearsWrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.gearsGroupRight {
+    position: absolute;
+    width: 587px;
+    height: 535px;
+    bottom: 18%;
+    right: -0.5%;
+    transform: rotate(60deg);
+    .smallGear,
+    .mediumGear,
+    .bigGear {
+        position: absolute;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .smallGear {
+        top: 0%;
+        right: 28%;
+        width: 176px;
+    }
+    .mediumGear {
+        top: 22%;
+        right: 0;
+        width: 208px;
+    }
+    .bigGear {
+        transform: rotate(3deg);
+        left: 2%;
+        bottom: 2%;
+        width: 366px;
+    }
 }

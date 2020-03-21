@@ -1,17 +1,20 @@
 import React from 'react'
 import './GearsGroupLeft.css'
+import smallGear from '../../../../../assets/images/smallGear.svg'
+import mediumGear from '../../../../../assets/images/mediumGear.svg'
+import bigGear from '../../../../../assets/images/bigGear.svg'
 
 const GearsGroupLeft = () => {
     return (
         <div className="gearsGroupLeft">
             <div className="smallGear">
-                <img src="" alt=""/> 
+                <img src={smallGear} alt=""/> 
             </div>
             <div className="mediumGear">
-                <img src="" alt=""/> 
+                <img src={mediumGear} alt=""/> 
             </div>
             <div className="bigGear">
-                <img src="" alt=""/> 
+                <img src={bigGear} alt=""/> 
             </div>
         </div>
     );
