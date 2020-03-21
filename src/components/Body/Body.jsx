@@ -1,14 +1,16 @@
 import React from 'react'
 import  './Body.css'
 import FirstPart from './FirstPart/FirstPart'
-import BodyHeader from './BodyHeader/BodyHeader'
+import SecondPart from './SecondPart/SecondPart'
 
 const Body = (props) => {
 
     return (
         <div className="bodyWrapper">
             <FirstPart />
-            <BodyHeader header={props.headers[0]}/>
+            <SecondPart headers={props.headers} />
+            
+
         </div>
     );
 }
