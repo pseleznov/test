@@ -1,7 +1,7 @@
 .grid {
   width: 86.76%;
   height: 627px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: -ms-grid;
   display: grid;
   gap: 10px;
@@ -72,13 +72,31 @@
 
 @media screen and (max-width: 1024px) {
   .grid {
-    height: 450px;
-    margin-bottom: 15px;
+    width: 91.66%;
+    height: 750px;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (180px)[4];
+        grid-template-rows: repeat(4, 180px);
+        grid-template-areas: "a b" "c d" "e f" "g i";
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    width: 91.66%;
+    height: 630px;
+    margin-bottom: 15px;
+    -ms-grid-rows: (150px)[4];
+        grid-template-rows: repeat(4, 150px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    height: 450px;
     -ms-grid-rows: (105px)[4];
         grid-template-rows: repeat(4, 105px);
-        grid-template-areas: "a b" "c d" "e f" "g i";
   }
 }
 /*# sourceMappingURL=Grid.css.map */

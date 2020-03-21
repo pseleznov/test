@@ -22,4 +22,19 @@
             transform: translateX(-50%);
         }
     }
+    @media screen and (max-width: 600px) {
+        height: 30px;
+        margin-bottom: 20px;
+        .bodyHeaderText {
+            font-size: 1.1em;
+            line-height: 23px;
+            &::after {
+                content: '';
+                display: block;
+                width: 60px;
+                height: 2px;
+                top: 28px;
+            }
+        }
+    }
 }

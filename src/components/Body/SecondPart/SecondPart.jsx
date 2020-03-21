@@ -10,7 +10,7 @@ const SecondPart = (props) => {
             <Gears />
             <div className='secondPartMainContent'>
                 <BodyHeader header={props.headers} />
-                <Grid />
+                <Grid smallBanner={props.smallBanner} />
                 <button className='calc'>hjhjghjg</button>
             </div>
         </div>

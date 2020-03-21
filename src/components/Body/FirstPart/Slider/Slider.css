@@ -9,6 +9,7 @@
 
 .slider .slide.selected > div img {
   height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -26,10 +27,24 @@
 }
 
 .slider .carousel .control-dots .dot {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   background-color: #fff;
   opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .slider .carousel .control-dots .dot {
+    width: 11px;
+    height: 11px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .slider .carousel .control-dots .dot {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 .slider .carousel .control-dots .dot.selected {

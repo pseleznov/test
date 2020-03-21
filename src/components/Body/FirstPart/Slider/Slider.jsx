@@ -13,13 +13,13 @@ const Slider = (props) => {
                     <img src={props.image[0]} />
                 </div>
                 <div>
-                    <img src={props.image[0]} />
+                    <img src={props.image[2]} />
                 </div>
                 <div>
-                    <img src={props.image[0]} />
+                    <img src={props.image[1]} />
                 </div>
                 <div>
-                    <img src={props.image[0]} />
+                    <img src={props.image[2]} />
                 </div>
             </Carousel>
             <BigBannerContainer />

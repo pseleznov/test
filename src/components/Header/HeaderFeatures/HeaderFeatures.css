@@ -16,9 +16,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -30,6 +30,7 @@
   font-size: 0;
   height: 41px;
   padding: 0px 13px;
+  border: none;
 }
 
 .headerFeatures .form-hidden label img {
@@ -64,10 +65,9 @@
   -webkit-transform: translate(0%, 41px);
           transform: translate(0%, 41px);
   background: #F1F1F1;
-  border-left: 1px solid #F1F1F1;
-  -webkit-transition: background 0s ease 0.4s, border 0s ease 0.4s, -webkit-transform 0.5s ease;
-  transition: background 0s ease 0.4s, border 0s ease 0.4s, -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease, background 0s ease 0.4s, border 0s ease 0.4s;
-  transition: transform 0.5s ease, background 0s ease 0.4s, border 0s ease 0.4s, -webkit-transform 0.5s ease;
+  -webkit-transition: background 0s ease 0.4s, -webkit-transform 0.5s ease;
+  transition: background 0s ease 0.4s, -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease, background 0s ease 0.4s;
+  transition: transform 0.5s ease, background 0s ease 0.4s, -webkit-transform 0.5s ease;
 }
 /*# sourceMappingURL=HeaderFeatures.css.map */

@@ -8,7 +8,8 @@ const Body = (props) => {
     return (
         <div className="bodyWrapper">
             <FirstPart />
-            <SecondPart headers={props.headers[0]} />
+            <SecondPart headers={props.headers[0]}
+                        smallBanner={props.smallBanner} />
             
 
         </div>

@@ -5,7 +5,8 @@ const mapStateToProps = (state) => {
     return {
         headers: state.bodyPart.secondPart.headers,
         text: state.bodyPart.secondPart.smallBannerText,
-        calculation: state.bodyPart.secondPart.fastCalculationText
+        calculation: state.bodyPart.secondPart.fastCalculationText,
+        smallBanner: state.bodyPart.secondPart.smallBanner
     }
 }
 

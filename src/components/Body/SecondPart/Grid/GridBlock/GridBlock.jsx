@@ -2,13 +2,13 @@ import React from 'react'
 import './GridBlock.css'
 import SmallBanner from '../../../../Banners/SmallBanner/SmallBanner'
 
-const GridBlock = () => {
+const GridBlock = (props) => {
     return (
         <div className="gridBlock">
             <div className="gridBlockImg"> 
-                <img src="" alt=""/>
+                <img src={props.state.img} alt=""/>
             </div>
-            <SmallBanner />
+            <SmallBanner text={props.state.text} />
         </div>
     );
 }

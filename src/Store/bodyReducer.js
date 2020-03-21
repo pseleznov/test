@@ -1,4 +1,6 @@
 import firstPicture from '../assets/images/Rectangle.png'
+import secondPicture from '../assets/images/Rectangle.jpg'
+import thirdPicture from '../assets/images/Rectangle.svg'
 import first from '../assets/images/first.jpg'
 import second from '../assets/images/second.jpg'
 import third from '../assets/images/third.png'
@@ -11,7 +13,9 @@ import eighth from '../assets/images/eighth.jpg'
 let initialState = {
     firstPart: {
         images: [
-            firstPicture
+            firstPicture,
+            secondPicture,
+            thirdPicture
         ],
         bigBannerText: {
             firstline: 'Высокоточное изготовление',

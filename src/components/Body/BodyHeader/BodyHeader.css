@@ -32,4 +32,22 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+
+@media screen and (max-width: 600px) {
+  .bodyHeader {
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  .bodyHeader .bodyHeaderText {
+    font-size: 1.1em;
+    line-height: 23px;
+  }
+  .bodyHeader .bodyHeaderText::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    top: 28px;
+  }
+}
 /*# sourceMappingURL=BodyHeader.css.map */
