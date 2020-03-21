@@ -9,7 +9,25 @@ let initialState = {
             firstline: 'Высокоточное изготовление',
             secondline: 'изделий из метала по чертежам'
         }
+    },
+    secondPart: {
+        headers: [
+            'Услуги',
+            'Наша компания'
+        ],
+        smallBannerText: {
+            first: 'Производство оборудования',
+            second: 'Металлическая мебель',
+            third: 'Металлоконструкции',
+            fourth: 'Металлооброботка',
+            fifth: 'Раскрой металла',
+            sixth: 'Конструкторское бюро',
+            seventh: 'Аренда техники',
+            eighth: 'Ремонт техники'
+        },
+        fastCalculationText : ''
     }
+
 }
 
 const bodyReducer = (state = initialState, action) => {

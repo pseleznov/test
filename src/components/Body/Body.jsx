@@ -1,11 +1,13 @@
 import React from 'react'
 import  './Body.css'
 import FirstPart from './FirstPart/FirstPart'
+import BodyHeader from './BodyHeader/BodyHeader'
 
-const Body = () => {
+const Body = (props) => {
     return (
         <div className="bodyWrapper">
             <FirstPart />
+            <BodyHeader header='Услуга'/>
         </div>
     );
 }
