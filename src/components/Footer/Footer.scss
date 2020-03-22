@@ -1,12 +1,7 @@
 .footerWrapper {
     height: 300px;
     padding-top: 20px;
-    border: 1px solid black;
     .footergrid {
-        div {
-            border: 1px solid rgb(224, 42, 42);
-        }
-        border: 1px solid black;
         display: grid;
         grid-template-columns: 282 /1360 *100% 686 /1360 *100% 390 /1360 *100%;
         grid-template-rows: repeat(1, 250px);
@@ -17,16 +12,16 @@
                 justify-content: flex-start;
                 align-items: flex-start;
                 flex-direction: column;
+                .title {
+                    font-size: 1em;
+                    color: #3E3E3E;
+                    margin-bottom: 30px;
+                }
                 span {
                     margin-bottom: 15px;
                     font-size: 0.89em;
                     line-height: 21px;
                     color: #AEAEAE;
-                    &:first-child {
-                        font-size: 1em;
-                        color: #3E3E3E;
-                        margin-bottom: 30px;
-                    }
                 }
             }
         }
@@ -35,9 +30,78 @@
             justify-content: flex-end;
             .serviceWrapper {
                 width: 513px;
+                color: #AEAEAE;
+                line-height: 21px;
+                    .title {
+                        font-size: 1em;
+                        color: #3E3E3E;
+                        margin-bottom: 30px;
+                    }
+
+                .serviceBlock {
+                    display: flex;
+                    justify-content: space-between;
+                    .firstServiceBlock,
+                    .secondServiceBlock{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        > div {
+                            margin-bottom: 15px;
+                        }
+                    }                 
+                }
+            }
+        }
+        .contacts {
+            margin: 0 auto;
+            .contactsWrapper {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                span {
+                    max-width: 210px;
+                    margin-bottom: 15px;
+                    font-size: 0.89em;
+                    line-height: 21px;
+                    color: #3E3E3E;
+                    &:first-child {
+                        font-size: 1em;
+                    }
+                }
+                .links {
+                    display: flex;
+                    a {
+                        text-decoration: none;
+                        width: 21px;
+                        height: 21px;
+                        font-size: 0;
+                        margin-right: 15px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
             }
         }
     }
+    .directed_By_Robert_B_Weide {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        > div {
+            font-size: 0.77em;
+            line-height: 14px;
+            width: 90px;
+            height: 30px;
+            text-align: center;
+        }
+    }
 }
+
 
 // 
