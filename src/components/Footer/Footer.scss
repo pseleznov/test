@@ -197,6 +197,14 @@
                             width: 100%;
                             height: 100%;
                         }
+                        @media screen and (max-width: 768px) {
+                            &:last-child {
+                                display: none;
+                            }
+                            &:first-child {
+                                margin-left: 15px;
+                            }
+                        }
                     }
                 }
             }

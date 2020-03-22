@@ -335,6 +335,15 @@
   height: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .footerWrapper .footergrid .contacts .contactsWrapper .links a:last-child {
+    display: none;
+  }
+  .footerWrapper .footergrid .contacts .contactsWrapper .links a:first-child {
+    margin-left: 15px;
+  }
+}
+
 .footerWrapper .directed_By_Robert_B_Weide {
   height: 50px;
   display: -webkit-box;
