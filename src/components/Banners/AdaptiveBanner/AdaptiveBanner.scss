@@ -30,15 +30,40 @@
         height: 212px;  
         background: #E4B56B;   
     }
+    @media screen and (max-width: 768px) {
+        top: 28px;
+        width: 326px;
+        height: 180px;
+        .AdaptiveBannerLine {
+            height: 100px;
+        }
+        .AdaptiveBannerText {
+            .ABT-head {
+                font-size: 1.1em;
+                line-height: 23px;
+            }
+            .ABT-main {
+                font-size: 0.66em;
+                line-height: 16px;
+            }
+        }
+    }
 }
 
 .left {
     left: 0;
     .AdaptiveBannerText {
         padding: 20px 0px 40px 90px;
+        @media screen and (max-width: 768px) {
+            width: 80%;
+            padding: 15px 0 15px 16px;
+        }
     }
     .AdaptiveBannerLine {
         right: 61px;
+        @media screen and (max-width: 768px) {
+            right: 20px;
+        }
     }
 }
 
@@ -46,8 +71,15 @@
     right: 0;
     .AdaptiveBannerText {
         padding: 20px 0px 40px 115px;
+        @media screen and (max-width: 768px) {
+            width: 90%;
+            padding: 15px 0px 15px 65px;
+        }
     }
     .AdaptiveBannerLine {
         left: 78px; 
+        @media screen and (max-width: 768px) {
+            left: 20px;
+        }
     }
 }

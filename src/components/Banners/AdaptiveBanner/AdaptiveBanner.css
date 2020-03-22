@@ -48,6 +48,29 @@
   background: #E4B56B;
 }
 
+@media screen and (max-width: 768px) {
+  .left,
+  .right {
+    top: 28px;
+    width: 326px;
+    height: 180px;
+  }
+  .left .AdaptiveBannerLine,
+  .right .AdaptiveBannerLine {
+    height: 100px;
+  }
+  .left .AdaptiveBannerText .ABT-head,
+  .right .AdaptiveBannerText .ABT-head {
+    font-size: 1.1em;
+    line-height: 23px;
+  }
+  .left .AdaptiveBannerText .ABT-main,
+  .right .AdaptiveBannerText .ABT-main {
+    font-size: 0.66em;
+    line-height: 16px;
+  }
+}
+
 .left {
   left: 0;
 }
@@ -56,8 +79,21 @@
   padding: 20px 0px 40px 90px;
 }
 
+@media screen and (max-width: 768px) {
+  .left .AdaptiveBannerText {
+    width: 80%;
+    padding: 15px 0 15px 16px;
+  }
+}
+
 .left .AdaptiveBannerLine {
   right: 61px;
+}
+
+@media screen and (max-width: 768px) {
+  .left .AdaptiveBannerLine {
+    right: 20px;
+  }
 }
 
 .right {
@@ -68,7 +104,20 @@
   padding: 20px 0px 40px 115px;
 }
 
+@media screen and (max-width: 768px) {
+  .right .AdaptiveBannerText {
+    width: 90%;
+    padding: 15px 0px 15px 65px;
+  }
+}
+
 .right .AdaptiveBannerLine {
   left: 78px;
+}
+
+@media screen and (max-width: 768px) {
+  .right .AdaptiveBannerLine {
+    left: 20px;
+  }
 }
 /*# sourceMappingURL=AdaptiveBanner.css.map */

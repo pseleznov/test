@@ -10,10 +10,6 @@
       grid-template-areas: "a a b b c c" "d d e e f f" "g g g i i i";
 }
 
-.grid > div {
-  background-color: #78998f;
-}
-
 .grid .block1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;

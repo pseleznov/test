@@ -17,6 +17,13 @@
                 height: 100%;
             }
         }
+        @media screen and (max-width: 768px) {
+            height: 492px;
+            .topPicture,
+            .bottomPicture {
+                height: 236px;
+            }
+        }
     }
 
 }

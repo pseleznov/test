@@ -1,1 +1,66 @@
-/* No CSS *//*# sourceMappingURL=Footer.css.map */
+.footerWrapper {
+  height: 300px;
+  padding-top: 20px;
+  border: 1px solid black;
+}
+
+.footerWrapper .footergrid {
+  border: 1px solid black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20.73529% 50.44118% 28.67647%;
+      grid-template-columns: 20.73529% 50.44118% 28.67647%;
+  -ms-grid-rows: (250px)[1];
+      grid-template-rows: repeat(1, 250px);
+}
+
+.footerWrapper .footergrid div {
+  border: 1px solid #e02a2a;
+}
+
+.footerWrapper .footergrid .info {
+  margin: 0 auto;
+}
+
+.footerWrapper .footergrid .info .infoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footerWrapper .footergrid .info .infoWrapper span {
+  margin-bottom: 15px;
+  font-size: 0.89em;
+  line-height: 21px;
+  color: #AEAEAE;
+}
+
+.footerWrapper .footergrid .info .infoWrapper span:first-child {
+  font-size: 1em;
+  color: #3E3E3E;
+  margin-bottom: 30px;
+}
+
+.footerWrapper .footergrid .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footerWrapper .footergrid .service .serviceWrapper {
+  width: 513px;
+}
+/*# sourceMappingURL=Footer.css.map */
