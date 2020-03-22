@@ -8,10 +8,18 @@ const HeaderLanguage = () => {
     return (
         < div className="languageBar" >
             <div className="flag">
-                <img src={flag} alt=""/>
+                <img src={flag} alt="" />
             </div>
             <div className="vectorImg">
-                <img src={vector} alt=""/>
+                <img src={vector} alt="" />
+            </div>
+            <div className="vypadashka">
+                <div className="flag">
+                    <img src={flag} alt="" />
+                </div>
+                <div className="flag">
+                    <img src={flag} alt="" />
+                </div>
             </div>
         </div >
     );
