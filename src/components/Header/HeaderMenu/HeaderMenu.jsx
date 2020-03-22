@@ -10,6 +10,17 @@ import United_KingdomFlag from '../../../assets/images/Flag_of_the_United_Kingdo
 
 
 const HeaderMenu = (props) => {
+
+    const languageRuToggle = () => {
+        props.setLanguage('ru');
+    }
+    const languageUaToggle = () => {
+        props.setLanguage('ua');
+    }
+    const languageEngToggle = () => {
+        props.setLanguage('eng');
+    }
+
     return (
         <div className='burgerMenu'>
             <input type='checkbox' id='a1' className='checkbox' />
@@ -27,9 +38,9 @@ const HeaderMenu = (props) => {
                     <div className="forPhone">
                         <NavLink to='/homepage' activeClassName='active'>{props.currentData[5]}</NavLink>
                         <div className="languages">
-                            <div><img src={RussiaFlag} alt=""/></div>
-                            <div><img src={UkraineFlag} alt=""/></div>
-                            <div><img src={United_KingdomFlag} alt=""/></div>
+                            <div onClick={languageRuToggle}><img src={RussiaFlag} alt=""/></div>
+                            <div onClick={languageUaToggle}><img src={UkraineFlag} alt=""/></div>
+                            <div onClick={languageEngToggle}><img src={United_KingdomFlag} alt=""/></div>
                         </div>
                     </div>
                 </div>

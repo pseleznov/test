@@ -9,7 +9,10 @@ const Header = (props) => {
     return (
         <div className="headerWrapper">
             <HeaderPicture />
-            <HeaderMenu currentData={props.currentData} />
+            <HeaderMenu 
+                currentData={props.currentData}
+                setLanguage={props.setLanguage} 
+            />
             <HeaderFeatures search={props.currentData[6]} />
             <HeaderLanguage setLanguage={props.setLanguage} />
         </div>

@@ -8,7 +8,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        overflow: hidden;
         .flag {
             height: 21px;
             width: 31px;
@@ -30,49 +29,47 @@
         }
         .vypadashka {
             position: absolute;
-            top: 1px;
+            z-index: -1;
+            top: 43px;
             left: -10px;
-            height: 124px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            height: 82px;
             width: 51px;
-            transform: translateY(-94px);
-            > div:first-child {
-                background: transparent;
-                height: 42px;
-            }
-            > div:last-child {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                flex-direction: column;
-                height: 82px;
-                width: 100%;
-                background: transparent;
+            transform: translateY(-124px);
+            transition: all 2s ease 2s;
                 .flag {
                     height: 21px;
-                     width: 31px;
-                     font-size: 0;
+                    width: 31px;
+                    font-size: 0;
                     img {
                         width: 100%;
                         height: 100%;
                         opacity: 0;
+                        transition: all 0.1s ease 2s;
                     }
                 }
             }
-        }
         &:hover {
-            overflow: visible;
             .vypadashka {
+                transform: translateY(0%);
+                background: #3e3e3e80;
+                transition:transform 0.5s ease, background 0.5s ease 0.3s;
                 &:hover {
                     transform: translateY(0%);
-                    transition: transform 0.5s ease, background 0.5s ease 0.2s;
-                    > div:last-child {
-                        background: #3e3e3e80;
-                        transition: background 0.5s ease 0.3s;
-                    }
-                    .flag {
-                        img {
-                            opacity: 1;
-                        }
+                    background: #3e3e3e80;
+                    transition: transform 0.5s ease;
+                }
+                .flag {
+                    width: 31px;
+                    height: 21px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        opacity: 1;
+                        transition: transform 0.1s ease 2s;
                     }
                 }
             }

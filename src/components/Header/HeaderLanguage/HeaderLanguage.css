@@ -13,7 +13,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
 }
 
 .languageBar .flag {
@@ -42,20 +41,9 @@
 
 .languageBar .vypadashka {
   position: absolute;
-  top: 1px;
+  z-index: -1;
+  top: 43px;
   left: -10px;
-  height: 124px;
-  width: 51px;
-  -webkit-transform: translateY(-94px);
-          transform: translateY(-94px);
-}
-
-.languageBar .vypadashka > div:first-child {
-  background: transparent;
-  height: 42px;
-}
-
-.languageBar .vypadashka > div:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,43 +58,60 @@
       -ms-flex-direction: column;
           flex-direction: column;
   height: 82px;
-  width: 100%;
-  background: transparent;
+  width: 51px;
+  -webkit-transform: translateY(-124px);
+          transform: translateY(-124px);
+  -webkit-transition: all 2s ease 2s;
+  transition: all 2s ease 2s;
 }
 
-.languageBar .vypadashka > div:last-child .flag {
+.languageBar .vypadashka .flag {
   height: 21px;
   width: 31px;
   font-size: 0;
 }
 
-.languageBar .vypadashka > div:last-child .flag img {
+.languageBar .vypadashka .flag img {
   width: 100%;
   height: 100%;
   opacity: 0;
+  -webkit-transition: all 0.1s ease 2s;
+  transition: all 0.1s ease 2s;
 }
 
-.languageBar:hover {
-  overflow: visible;
+.languageBar:hover .vypadashka {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  background: #3e3e3e80;
+  -webkit-transition: background 0.5s ease 0.3s, -webkit-transform 0.5s ease;
+  transition: background 0.5s ease 0.3s, -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease, background 0.5s ease 0.3s;
+  transition: transform 0.5s ease, background 0.5s ease 0.3s, -webkit-transform 0.5s ease;
 }
 
 .languageBar:hover .vypadashka:hover {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
-  -webkit-transition: background 0.5s ease 0.2s, -webkit-transform 0.5s ease;
-  transition: background 0.5s ease 0.2s, -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease, background 0.5s ease 0.2s;
-  transition: transform 0.5s ease, background 0.5s ease 0.2s, -webkit-transform 0.5s ease;
-}
-
-.languageBar:hover .vypadashka:hover > div:last-child {
   background: #3e3e3e80;
-  -webkit-transition: background 0.5s ease 0.3s;
-  transition: background 0.5s ease 0.3s;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
-.languageBar:hover .vypadashka:hover .flag img {
+.languageBar:hover .vypadashka .flag {
+  width: 31px;
+  height: 21px;
+}
+
+.languageBar:hover .vypadashka .flag img {
+  width: 100%;
+  height: 100%;
   opacity: 1;
+  -webkit-transition: -webkit-transform 0.1s ease 2s;
+  transition: -webkit-transform 0.1s ease 2s;
+  transition: transform 0.1s ease 2s;
+  transition: transform 0.1s ease 2s, -webkit-transform 0.1s ease 2s;
 }
 
 .languageBar:hover .vectorImg {

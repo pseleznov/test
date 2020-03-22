@@ -29,14 +29,11 @@ const HeaderLanguage = (props) => {
                 <img src={vector} alt="" />
             </div>
             <div className="vypadashka">
-                <div></div>
-                <div>
-                    <div className="flag" onClick={languageUaToggle}>
-                        <img src={Ukraineflag} alt="" />
-                    </div>
-                    <div className="flag" onClick={languageEngToggle}>
-                        <img src={UK} alt="" />
-                    </div>
+                <div className="flag" onClick={languageUaToggle}>
+                    <img src={Ukraineflag} alt="" />
+                </div>
+                <div className="flag" onClick={languageEngToggle}>
+                    <img src={UK} alt="" />
                 </div>
             </div>
         </div >
