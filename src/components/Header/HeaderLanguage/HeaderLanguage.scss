@@ -40,13 +40,19 @@
             width: 51px;
             background-color: transparent;
             transform: translateY(-94px);
+            img {
+                opacity: 0;
+            }
         }
         &:hover {
             overflow: visible;
             .vypadashka {
                 background: #3e3e3e80;
                 transform: translateY(0%);
-                transition: transform 0.5s ease, background 0.5s ease 0.2s
+                transition: transform 0.5s ease, background 0.5s ease 0.2s;
+                img {
+                    opacity: 1;
+                }
             }
             .vectorImg {
                 transform: rotate(-180deg);
