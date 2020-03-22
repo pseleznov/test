@@ -1,6 +1,65 @@
 .footerWrapper {
   height: 300px;
   padding-top: 20px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .footerWrapper {
+    height: 540px;
+  }
+}
+
+.footerWrapper .goldenLine {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 55px;
+  background: #E4B56B;
+}
+
+@media screen and (max-width: 1024px) {
+  .footerWrapper .goldenLine {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerWrapper .goldenLine {
+    display: block;
+  }
+}
+
+.footerWrapper .goldenLine.one {
+  left: 415px;
+}
+
+@media screen and (max-width: 1320px) {
+  .footerWrapper .goldenLine.one {
+    left: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerWrapper .goldenLine.one {
+    left: 127px;
+  }
+}
+
+.footerWrapper .goldenLine.two {
+  left: 914px;
+}
+
+@media screen and (max-width: 1320px) {
+  .footerWrapper .goldenLine.two {
+    left: 700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerWrapper .goldenLine.two {
+    left: 349px;
+  }
 }
 
 .footerWrapper .footergrid {
@@ -10,6 +69,31 @@
       grid-template-columns: 20.73529% 50.44118% 28.67647%;
   -ms-grid-rows: (250px)[1];
       grid-template-rows: repeat(1, 250px);
+}
+
+@media screen and (max-width: 768px) {
+  .footerWrapper .footergrid {
+    -ms-grid-columns: 123fr 236fr;
+        grid-template-columns: 123fr 236fr;
+    row-gap: 15px;
+        grid-template-areas: "info service" "contacts contacts";
+  }
+  .footerWrapper .footergrid .info {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: info;
+  }
+  .footerWrapper .footergrid .serviceComp {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: service;
+  }
+  .footerWrapper .footergrid .contacts {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: contacts;
+  }
 }
 
 .footerWrapper .footergrid .info {
@@ -38,6 +122,14 @@
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .footerWrapper .footergrid .info .infoWrapper .title {
+    margin-bottom: 20px;
+    font-size: 0.89em;
+    line-height: 19px;
+  }
+}
+
 .footerWrapper .footergrid .info .infoWrapper span {
   margin-bottom: 15px;
   font-size: 0.89em;
@@ -45,7 +137,14 @@
   color: #AEAEAE;
 }
 
-.footerWrapper .footergrid .service {
+@media screen and (max-width: 768px) {
+  .footerWrapper .footergrid .info .infoWrapper span {
+    font-size: 0.77em;
+    line-height: 16px;
+  }
+}
+
+.footerWrapper .footergrid .serviceComp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,29 +153,36 @@
           justify-content: flex-end;
 }
 
-.footerWrapper .footergrid .service .serviceWrapper {
+@media screen and (max-width: 768px) {
+  .footerWrapper .footergrid .serviceComp {
+    display: none;
+  }
+}
+
+.footerWrapper .footergrid .serviceComp .serviceWrapper {
   width: 513px;
   color: #AEAEAE;
   line-height: 21px;
 }
 
-.footerWrapper .footergrid .service .serviceWrapper .title {
+.footerWrapper .footergrid .serviceComp .serviceWrapper .title {
   font-size: 1em;
   color: #3E3E3E;
   margin-bottom: 30px;
 }
 
-.footerWrapper .footergrid .service .serviceWrapper .serviceBlock {
+.footerWrapper .footergrid .serviceComp .serviceWrapper .serviceBlock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.footerWrapper .footergrid .service .serviceWrapper .serviceBlock .firstServiceBlock,
-.footerWrapper .footergrid .service .serviceWrapper .serviceBlock .secondServiceBlock {
+.footerWrapper .footergrid .serviceComp .serviceWrapper .serviceBlock .firstServiceBlock,
+.footerWrapper .footergrid .serviceComp .serviceWrapper .serviceBlock .secondServiceBlock {
+  margin-right: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,8 +198,42 @@
           flex-direction: column;
 }
 
-.footerWrapper .footergrid .service .serviceWrapper .serviceBlock .firstServiceBlock > div,
-.footerWrapper .footergrid .service .serviceWrapper .serviceBlock .secondServiceBlock > div {
+.footerWrapper .footergrid .serviceComp .serviceWrapper .serviceBlock .firstServiceBlock > div,
+.footerWrapper .footergrid .serviceComp .serviceWrapper .serviceBlock .secondServiceBlock > div {
+  font-size: 0.89em;
+  margin-bottom: 15px;
+}
+
+.footerWrapper .footergrid .servicePhone {
+  display: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .footerWrapper .footergrid .servicePhone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.footerWrapper .footergrid .servicePhone .serviceWrapper {
+  width: 211px;
+  color: #AEAEAE;
+  line-height: 16px;
+}
+
+.footerWrapper .footergrid .servicePhone .serviceWrapper .title {
+  font-size: 0.89em;
+  line-height: 19px;
+  color: #3E3E3E;
+  margin-bottom: 20px;
+}
+
+.footerWrapper .footergrid .servicePhone .serviceWrapper > div {
+  font-size: 0.77em;
   margin-bottom: 15px;
 }
 
@@ -117,6 +257,15 @@
           flex-direction: column;
 }
 
+@media screen and (max-width: 768px) {
+  .footerWrapper .footergrid .contacts .contactsWrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
 .footerWrapper .footergrid .contacts .contactsWrapper span {
   max-width: 210px;
   margin-bottom: 15px;
@@ -125,8 +274,46 @@
   color: #3E3E3E;
 }
 
+@media screen and (max-width: 768px) {
+  .footerWrapper .footergrid .contacts .contactsWrapper span:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footerWrapper .footergrid .contacts .contactsWrapper span:nth-child(2) span {
+    font-size: 1em;
+    line-height: 21px;
+    margin-bottom: 0px;
+    color: #3E3E3E;
+  }
+}
+
 .footerWrapper .footergrid .contacts .contactsWrapper span:first-child {
   font-size: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .footerWrapper .footergrid .contacts .contactsWrapper span:first-child {
+    font-size: 0.89em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerWrapper .footergrid .contacts .contactsWrapper span {
+    line-height: 19px;
+    max-width: 190px;
+    text-align: center;
+  }
 }
 
 .footerWrapper .footergrid .contacts .contactsWrapper .links {
@@ -161,10 +348,43 @@
           align-items: flex-start;
 }
 
+@media screen and (max-width: 768px) {
+  .footerWrapper .directed_By_Robert_B_Weide {
+    display: none;
+  }
+}
+
 .footerWrapper .directed_By_Robert_B_Weide > div {
   font-size: 0.77em;
   line-height: 14px;
   width: 90px;
+  height: 30px;
+  text-align: center;
+}
+
+.footerWrapper .directed_By_Robert_B_Weide_phone {
+  height: 47px;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .footerWrapper .directed_By_Robert_B_Weide_phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.footerWrapper .directed_By_Robert_B_Weide_phone > div {
+  font-size: 14px;
+  line-height: 14px;
+  width: 47px;
   height: 30px;
   text-align: center;
 }

@@ -8,6 +8,8 @@ import google from '../../assets/images/googlePlus.jpg'
 const Footer = () => {
     return (
         <div className="footerWrapper">
+            <div className="goldenLine one"></div>
+            <div className="goldenLine two"></div>
             <div className="footergrid">
                 <div className="info">
                     <div className="infoWrapper">
@@ -18,7 +20,9 @@ const Footer = () => {
                         <span>Форма заказа</span>
                     </div>
                 </div>
-                <div className="service">
+
+
+                <div className="serviceComp">
                     <div className="serviceWrapper">
                         <div className="title">Услуги</div>
                         <div className="serviceBlock">
@@ -37,23 +41,46 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+
+
+                <div className="servicePhone">
+                    <div className="serviceWrapper">
+                        <div className="title">Услуги</div>
+                        <div>Производство оборудования</div>
+                        <div>Арт-объекты</div>
+                        <div>Металлическая мебель</div>
+                        <div>Металлообработка</div>
+                        <div>Лазерная резка</div>
+                        <div>Металлоконструкции</div>
+                        <div>Аренда спецтехники</div>
+                    </div>
+                </div>
+
+
                 <div className="contacts">
                     <div className="contactsWrapper">
                         <span>Контактная информация</span>
-                        <span>Заводская улица, 2В, Буча, Киевская область, 08292</span>
+                        <span>
+                            <span>Заводская улица, 2 В,</span>
+                            <span>Буча,</span>
+                            <span> Киевская область, 08292</span>
+                        </span>
                         <span>ПН - ПТ: 09:00 - 18:00</span>
                         <span>+38(097)123-45-67</span>
                         <div className="links">
-                            <a href="#"><img src={facebook} alt=""/></a>
-                            <a href="#"><img src={instagram} alt=""/></a>
-                            <a href="#"><img src={youtube} alt=""/></a>
-                            <a href="#"><img src={google} alt=""/></a>
+                            <a href="#"><img src={facebook} alt="" /></a>
+                            <a href="#"><img src={instagram} alt="" /></a>
+                            <a href="#"><img src={youtube} alt="" /></a>
+                            <a href="#"><img src={google} alt="" /></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="directed_By_Robert_B_Weide">
                 <div>Developed by Stubbs</div>
+            </div>
+            <div className="directed_By_Robert_B_Weide_phone">
+                <div> by Stubbs </div>
             </div>
         </div>
     );

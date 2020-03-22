@@ -1,10 +1,62 @@
 .footerWrapper {
     height: 300px;
     padding-top: 20px;
+    position: relative;
+     @media screen and (max-width: 768px) {
+        height: 540px;
+     }
+    .goldenLine {
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 55px;
+        background: #E4B56B;
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+    }
+    .goldenLine.one {
+        left: 415px;
+        @media screen and (max-width: 1320px) {
+            left: 200px;
+        }
+        @media screen and (max-width: 768px) {
+            left: 127px;
+        }
+    }
+    .goldenLine.two {
+        left: 914px;
+        @media screen and (max-width: 1320px) {
+            left: 700px
+        }
+        @media screen and (max-width: 768px) {
+            left: 349px;
+        }
+    }
     .footergrid {
         display: grid;
         grid-template-columns: 282 /1360 *100% 686 /1360 *100% 390 /1360 *100%;
         grid-template-rows: repeat(1, 250px);
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 123fr 236fr;
+            row-gap: 15px;
+            grid-template-areas: 
+                "info service"
+                "contacts contacts";
+            .info {
+                grid-area: info;
+            }
+            .serviceComp {
+                grid-area: service;
+            }
+            .contacts {
+                grid-area: contacts;
+            }
+            
+        }
         .info {
             margin: 0 auto;
             .infoWrapper {
@@ -16,52 +68,106 @@
                     font-size: 1em;
                     color: #3E3E3E;
                     margin-bottom: 30px;
+                    @media screen and (max-width: 768px) {
+                        margin-bottom: 20px;
+                        font-size: 0.89em;
+                        line-height: 19px;
+                    }
                 }
                 span {
                     margin-bottom: 15px;
                     font-size: 0.89em;
                     line-height: 21px;
                     color: #AEAEAE;
+                    @media screen and (max-width: 768px) {
+                        font-size: 0.77em;
+                        line-height: 16px;
+                    }
                 }
             }
         }
-        .service {
+        .serviceComp {
             display: flex;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
             justify-content: flex-end;
             .serviceWrapper {
                 width: 513px;
                 color: #AEAEAE;
                 line-height: 21px;
-                    .title {
-                        font-size: 1em;
-                        color: #3E3E3E;
-                        margin-bottom: 30px;
-                    }
+                .title {
+                    font-size: 1em;
+                    color: #3E3E3E;
+                    margin-bottom: 30px;
+                }
 
                 .serviceBlock {
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: flex-start;
                     .firstServiceBlock,
-                    .secondServiceBlock{
+                    .secondServiceBlock {
+                        margin-right: 60px;
                         display: flex;
                         justify-content: flex-start;
                         align-items: flex-start;
                         flex-direction: column;
                         > div {
+                            font-size: 0.89em;
                             margin-bottom: 15px;
                         }
                     }                 
                 }
             }
         }
+        .servicePhone {
+            display: none;
+            @media screen and (max-width: 768px) {
+                display: flex;
+            }
+            justify-content: flex-end;
+            .serviceWrapper {
+                width: 211px;
+                color: #AEAEAE;
+                line-height: 16px;
+                .title {
+                    font-size: 0.89em;
+                    line-height: 19px;
+                    color: #3E3E3E;
+                    margin-bottom: 20px;
+                }
+                > div {
+                    font-size: 0.77em;
+                    margin-bottom: 15px;
+                }
+            }
+        }
         .contacts {
             margin: 0 auto;
             .contactsWrapper {
+                @media screen and (max-width: 768px) {
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
                 display: flex;
                 justify-content: flex-start;
                 align-items: flex-start;
                 flex-direction: column;
                 span {
+                    @media screen and (max-width: 768px) {
+                        &:nth-child(2) {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            flex-direction: column;
+                            span {
+                                font-size: 1em;
+                                line-height: 21px;
+                                margin-bottom: 0px;
+                                color: #3E3E3E;
+                            }
+                        }
+                    }
                     max-width: 210px;
                     margin-bottom: 15px;
                     font-size: 0.89em;
@@ -69,6 +175,14 @@
                     color: #3E3E3E;
                     &:first-child {
                         font-size: 1em;
+                        @media screen and (max-width: 768px) {
+                            font-size: 0.89em;
+                        }
+                    }
+                    @media screen and (max-width: 768px) {
+                        line-height: 19px;
+                        max-width: 190px;
+                        text-align: center;
                     }
                 }
                 .links {
@@ -89,6 +203,9 @@
         }
     }
     .directed_By_Robert_B_Weide {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
         height: 50px;
         display: flex;
         justify-content: center;
@@ -97,6 +214,22 @@
             font-size: 0.77em;
             line-height: 14px;
             width: 90px;
+            height: 30px;
+            text-align: center;
+        }
+    }
+    .directed_By_Robert_B_Weide_phone {
+        @media screen and (max-width: 768px) {
+            display: flex;
+        }
+        height: 47px;
+        display: none;
+        justify-content: center;
+        align-items: flex-start;
+        > div {
+            font-size: 14px;
+            line-height: 14px;
+            width: 47px;
             height: 30px;
             text-align: center;
         }
