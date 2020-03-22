@@ -13,6 +13,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .languageBar .flag {
@@ -58,16 +59,23 @@
   left: -10px;
   height: 82px;
   width: 51px;
-  background: #3e3e3e80;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
+  background-color: transparent;
+  -webkit-transform: translateY(-94px);
+          transform: translateY(-94px);
+}
+
+.languageBar:hover {
+  overflow: visible;
 }
 
 .languageBar:hover .vypadashka {
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  background: #3e3e3e80;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: background 0.5s ease 0.2s, -webkit-transform 0.5s ease;
+  transition: background 0.5s ease 0.2s, -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease, background 0.5s ease 0.2s;
+  transition: transform 0.5s ease, background 0.5s ease 0.2s, -webkit-transform 0.5s ease;
 }
 
 .languageBar:hover .vectorImg {

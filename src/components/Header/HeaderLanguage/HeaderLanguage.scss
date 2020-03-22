@@ -8,6 +8,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        overflow: hidden;
         .flag {
             height: 21px;
             width: 31px;
@@ -37,13 +38,15 @@
             left: -10px;
             height: 82px;
             width: 51px;
-            background: #3e3e3e80;
-            transform: scaleY(0);
+            background-color: transparent;
+            transform: translateY(-94px);
         }
         &:hover {
+            overflow: visible;
             .vypadashka {
-                transform: scaleY(1);
-                transition: all 0.5s ease;
+                background: #3e3e3e80;
+                transform: translateY(0%);
+                transition: transform 0.5s ease, background 0.5s ease 0.2s
             }
             .vectorImg {
                 transform: rotate(-180deg);
