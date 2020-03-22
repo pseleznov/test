@@ -54,6 +54,8 @@
   background: #454647;
   font-size: 1.1em;
   line-height: 22px;
+  border: none;
+  outline: none;
 }
 
 .secondPartWrapper .button .forPhone {

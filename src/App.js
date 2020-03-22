@@ -12,7 +12,7 @@ const App = () => {
         <div className="content-wrapper">
           <Route path='/homepage' render={() => <BodyContainer />} />
         </div>
-        <Footer />
+        <Route path='/homepage' render={() => <Footer />} />
       </div>
   );
 }

@@ -10,16 +10,16 @@ const Slider = (props) => {
         <div className='slider'>
             <Carousel emulateTouch>
                 <div>
-                    <img src={props.image[0]} />
+                    <img src={props.image[0]} alt=""/>
                 </div>
                 <div>
-                    <img src={props.image[2]} />
+                    <img src={props.image[2]} alt=""/>
                 </div>
                 <div>
-                    <img src={props.image[1]} />
+                    <img src={props.image[1]} alt=""/>
                 </div>
                 <div>
-                    <img src={props.image[2]} />
+                    <img src={props.image[2]} alt=""/>
                 </div>
             </Carousel>
             <BigBannerContainer />

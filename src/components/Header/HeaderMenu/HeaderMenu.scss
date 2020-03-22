@@ -68,6 +68,23 @@
             z-index: 1;
             .forPhone {
                 display: none;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                .languages {
+                    display: flex;
+                    justify-content: flex-end;
+                    > div {
+                        width: 31px;
+                        height: 21px;
+                        font-size: 0;
+                        margin-left: 20px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
             }
             .headerMenuItem_underline {
                 width: 100%;

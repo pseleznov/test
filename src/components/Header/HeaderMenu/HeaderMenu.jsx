@@ -3,15 +3,10 @@ import './HeaderMenu.css'
 import { NavLink } from 'react-router-dom'
 import vector from '../../../assets/images/Vector.svg'
 import vectorForPhone from '../../../assets/images/VectorForPhone.svg'
+import UkraineFlag from '../../../assets/images/Flag_of_Ukraine.svg'
+import RussiaFlag from '../../../assets/images/Flag_of_Russia.svg'
+import United_KingdomFlag from '../../../assets/images/Flag_of_the_United_Kingdom.svg'
 
-const state = [
-    'Главная',
-    'Меню'
-];
-
-const BurgerOn = {
-    on: false
-}
 
 
 const HeaderMenu = () => {
@@ -31,6 +26,11 @@ const HeaderMenu = () => {
                     </div>
                     <div className="forPhone">
                         <NavLink to='/homepage' activeClassName='active'>Меню</NavLink>
+                        <div className="languages">
+                            <div><img src={RussiaFlag} alt=""/></div>
+                            <div><img src={UkraineFlag} alt=""/></div>
+                            <div><img src={United_KingdomFlag} alt=""/></div>
+                        </div>
                     </div>
                 </div>
                 <div className="headerMenuLine"></div>

@@ -86,7 +86,9 @@
     padding: 15px 0;
   }
   .headerWrapper .burgerMenu .headerMenu .headerMenuItem .forPhone {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .headerWrapper .burgerMenu .headerMenu .headerMenuItem .forComp {
     display: none;
