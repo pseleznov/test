@@ -16,6 +16,8 @@ const Body = (props) => {
             />
             <ThirdPart 
                 headers={props.headers[1]}
+                topBanner={props.topBanner}
+                bottomBanner={props.bottomBanner}
             />
         </div>
     );
