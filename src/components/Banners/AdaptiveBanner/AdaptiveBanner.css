@@ -1,0 +1,74 @@
+.left,
+.right {
+  position: absolute;
+  top: 60px;
+  width: 750px;
+  height: 260px;
+  background: #3e3e3ee6;
+}
+
+.left .AdaptiveBannerText,
+.right .AdaptiveBannerText {
+  width: 73%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #FFF;
+}
+
+.left .AdaptiveBannerText .ABT-head,
+.right .AdaptiveBannerText .ABT-head {
+  font-size: 2.2em;
+  line-height: 60px;
+}
+
+.left .AdaptiveBannerText .ABT-main,
+.right .AdaptiveBannerText .ABT-main {
+  font-size: 1em;
+  line-height: 23px;
+}
+
+.left .AdaptiveBannerLine,
+.right .AdaptiveBannerLine {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 212px;
+  background: #E4B56B;
+}
+
+.left {
+  left: 0;
+}
+
+.left .AdaptiveBannerText {
+  padding: 20px 0px 40px 90px;
+}
+
+.left .AdaptiveBannerLine {
+  right: 61px;
+}
+
+.right {
+  right: 0;
+}
+
+.right .AdaptiveBannerText {
+  padding: 20px 0px 40px 115px;
+}
+
+.right .AdaptiveBannerLine {
+  left: 78px;
+}
+/*# sourceMappingURL=AdaptiveBanner.css.map */

@@ -1,0 +1,35 @@
+.thirdPartWrapper {
+  width: 100%;
+}
+
+.thirdPartWrapper .thirdPartMainContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 790px;
+}
+
+.thirdPartWrapper .thirdPartMainContent .topPicture,
+.thirdPartWrapper .thirdPartMainContent .bottomPicture {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  font-size: 0px;
+}
+
+.thirdPartWrapper .thirdPartMainContent .topPicture img,
+.thirdPartWrapper .thirdPartMainContent .bottomPicture img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=ThirdPart.css.map */

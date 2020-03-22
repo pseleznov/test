@@ -1,0 +1,53 @@
+
+.left,
+.right {
+    position: absolute;
+    top: 60px;
+    width: 750px;
+    height: 260px;
+    background: #3e3e3ee6;
+    .AdaptiveBannerText {
+        width: 73%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        color: #FFF;
+        .ABT-head {
+            font-size: 2.2em;
+            line-height: 60px;
+        }
+        .ABT-main {
+            font-size: 1em;
+            line-height: 23px;
+        }
+    }
+    .AdaptiveBannerLine {
+        position: absolute;
+        top: 0;
+        width: 2px;
+        height: 212px;  
+        background: #E4B56B;   
+    }
+}
+
+.left {
+    left: 0;
+    .AdaptiveBannerText {
+        padding: 20px 0px 40px 90px;
+    }
+    .AdaptiveBannerLine {
+        right: 61px;
+    }
+}
+
+.right {
+    right: 0;
+    .AdaptiveBannerText {
+        padding: 20px 0px 40px 115px;
+    }
+    .AdaptiveBannerLine {
+        left: 78px; 
+    }
+}

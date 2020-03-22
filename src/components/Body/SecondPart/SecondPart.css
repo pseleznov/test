@@ -1,24 +1,24 @@
 .secondPartWrapper {
   position: relative;
   width: 100%;
-  height: 727px;
+  height: 843px;
 }
 
 @media screen and (max-width: 1024px) {
   .secondPartWrapper {
-    height: 913px;
+    height: 959px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .secondPartWrapper {
-    height: 793px;
+    height: 839px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .secondPartWrapper {
-    height: 549px;
+    height: 579px;
   }
 }
 
