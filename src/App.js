@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import { Route } from 'react-router-dom';
 import BodyContainer from './components/Body/BodyContainer';
+import HeaderContainer from './components/Header/HeaderContainer';
 
-const App = () => {
+const App = (props) => {
   return (
       <div className="wrapper">
-        <Header />
+          <HeaderContainer currentData={props.currentData} />
         <div className="content-wrapper">
           <Route path='/homepage' render={() => <BodyContainer />} />
         </div>

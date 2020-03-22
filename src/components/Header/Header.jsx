@@ -5,13 +5,13 @@ import HeaderMenu from './HeaderMenu/HeaderMenu';
 import HeaderFeatures from './HeaderFeatures/HeaderFeatures';
 import HeaderLanguage from './HeaderLanguage/HeaderLanguage';
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className="headerWrapper">
             <HeaderPicture />
-            <HeaderMenu />
-            <HeaderFeatures />
-            <HeaderLanguage />
+            <HeaderMenu currentData={props.currentData} />
+            <HeaderFeatures search={props.currentData[6]} />
+            <HeaderLanguage setLanguage={props.setLanguage} />
         </div>
     );
 }

@@ -49,11 +49,11 @@ const headerReducer = (state = initialState, action) => {
         case SET_LANGUAGE: {
             return {
                 ...state,
-                CurrentData: headerMenu.map( elem => {
+                CurrentData: state.headerMenu.map( elem => {
                     if(elem.key === action.key) {
                         return elem.data;
                     }
-                }).filter(Boolean)
+                }).filter(Boolean)[0]
             }
         }
         default: {

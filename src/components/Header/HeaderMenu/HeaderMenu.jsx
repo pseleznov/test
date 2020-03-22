@@ -9,7 +9,7 @@ import United_KingdomFlag from '../../../assets/images/Flag_of_the_United_Kingdo
 
 
 
-const HeaderMenu = () => {
+const HeaderMenu = (props) => {
     return (
         <div className='burgerMenu'>
             <input type='checkbox' id='a1' className='checkbox' />
@@ -21,11 +21,11 @@ const HeaderMenu = () => {
             <div className="headerMenu">
                 <div className="headerMenuItem">
                     <div className="forComp">
-                        <NavLink to='/homepage' activeClassName='active'>Главная</NavLink>
+                        <NavLink to='/homepage' activeClassName='active'>{props.currentData[0]}</NavLink>
                         <div className='headerMenuItem_underline'></div>
                     </div>
                     <div className="forPhone">
-                        <NavLink to='/homepage' activeClassName='active'>Меню</NavLink>
+                        <NavLink to='/homepage' activeClassName='active'>{props.currentData[5]}</NavLink>
                         <div className="languages">
                             <div><img src={RussiaFlag} alt=""/></div>
                             <div><img src={UkraineFlag} alt=""/></div>
@@ -37,7 +37,7 @@ const HeaderMenu = () => {
                 <div className="headerMenuItem">
                     <div className='headerMenuItemServ'>
                         <div>
-                            <NavLink to='/services' activeClassName='active'>Услуги</NavLink>
+                            <NavLink to='/services' activeClassName='active'>{props.currentData[1]}</NavLink>
                             <div className='headerMenuItem_underline'></div>
                         </div>
                         <div className='vectorImg'>
@@ -51,21 +51,21 @@ const HeaderMenu = () => {
                 <div className="headerMenuLine"></div>
                 <div className="headerMenuItem">
                     <div>
-                        <NavLink to='/ourwork' activeClassName='active'>Наши работы</NavLink>
+                        <NavLink to='/ourwork' activeClassName='active'>{props.currentData[2]}</NavLink>
                         <div className='headerMenuItem_underline'></div>
                     </div>
                 </div>
                 <div className="headerMenuLine"></div>
                 <div className="headerMenuItem">
                     <div>
-                        <NavLink to='aboutus' activeClassName='active'>О нас</NavLink>
+                        <NavLink to='aboutus' activeClassName='active'>{props.currentData[3]}</NavLink>
                         <div className='headerMenuItem_underline'></div>
                     </div>
                 </div>
                 <div className="headerMenuLine"></div>
                 <div className="headerMenuItem">
                     <div>
-                        <NavLink to='contacts' activeClassName='active'>Контакты</NavLink>
+                        <NavLink to='contacts' activeClassName='active'>{props.currentData[4]}</NavLink>
                         <div className='headerMenuItem_underline'></div>
                     </div>
                 </div>

@@ -6,10 +6,23 @@ import UK from '../../../assets/images/Flag_of_the_United_Kingdom_main.png';
 import vector from '../../../assets/images/Vector.svg';
 
 
-const HeaderLanguage = () => {
+
+const HeaderLanguage = (props) => {
+
+    const languageRuToggle = () => {
+        props.setLanguage('ru');
+    }
+    const languageUaToggle = () => {
+        props.setLanguage('ua');
+    }
+    const languageEngToggle = () => {
+        props.setLanguage('eng');
+    }
+
+
     return (
         < div className="languageBar" >
-            <div className="flag">
+            <div className="flag" onClick={languageRuToggle} >
                 <img src={Russiaflag} alt="" />
             </div>
             <div className="vectorImg">
@@ -18,10 +31,10 @@ const HeaderLanguage = () => {
             <div className="vypadashka">
                 <div></div>
                 <div>
-                    <div className="flag">
+                    <div className="flag" onClick={languageUaToggle}>
                         <img src={Ukraineflag} alt="" />
                     </div>
-                    <div className="flag">
+                    <div className="flag" onClick={languageEngToggle}>
                         <img src={UK} alt="" />
                     </div>
                 </div>
